@@ -44,7 +44,7 @@ download_bitcoind() {
             curl -L $binary_url > $tarball_name
             curl -L $shasums_url > SHA256SUMS.asc
         else
-            wget $binary_url
+            #wget $binary_url
             wget $shasums_url
         fi
         if test -e "${tarball_name}"; then
